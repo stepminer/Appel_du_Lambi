@@ -77,6 +77,44 @@
         .member p {
             margin: 0;
         }
+/* Partner Section Container */
+.partner-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if there isn’t enough space */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center-align items */
+}
+
+/* Individual Partner Figures */
+.partner {
+    text-align: center;
+    max-width: 200px; /* Set maximum width for each partner figure */
+    flex: 1; /* Allow items to grow and shrink equally */
+}
+
+/* Partner Images */
+.partner img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc; /* Optional: Border around images */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+/* Partner Links */
+.partner figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.partner figcaption a {
+    color: #007BFF; /* Link color */
+    text-decoration: none;
+}
+
+.partner figcaption a:hover {
+    text-decoration: underline;
+}
 
         /* Nouvelle section pour les réseaux sociaux */
         .social-links {
@@ -88,37 +126,6 @@
             text-decoration: none;
             margin: 0 10px;
         }
-<!-- Partenaires Section -->
-<section class="section partenaires">
-    <h2>Partenaires:</h2>
-    <div class="partner-container">
-        <!-- Partner 1 -->
-        <figure class="partner">
-            <img src="citoyennes2.png" alt="Endossé par Le Collectif" class="partner-image">
-            <figcaption>Endossé par Le Collectif</figcaption>
-        </figure>
-
-        <!-- Partner 2 -->
-        <figure class="partner">
-            <img src="VETYE_LOGO2.jpg" alt="Collabore avec Le Collectif" class="partner-image">
-            <figcaption>
-                Collabore avec Le Collectif
-                <br>
-                <a href="https://vetye-1803.netlify.app/" target="_blank" rel="noopener noreferrer">vetye-1803.netlify.app</a>
-            </figcaption>
-        </figure>
-
-        <!-- Partner 3 -->
-        <figure class="partner">
-            <img src="jeunesse2.jpg" alt="Supporté par Le Collectif" class="partner-image">
-            <figcaption>
-                Supporté par Le Collectif
-                <br>
-                <a href="https://jeunessedebouthaiti.org" target="_blank" rel="noopener noreferrer">jeunessedebouthaiti.org</a>
-            </figcaption>
-        </figure>
-    </div>
-</section>
 
         .social-links a:hover {
             text-decoration: underline;
@@ -355,29 +362,25 @@
         <!-- Partenaires Section -->
 
 <section class="section partenaires">
-    <h2>Partenaires:</h2>
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-        <!-- Partner 1 -->
-        <figure style="text-align: center; max-width: 200px;">
-  <div class="partner-images">
-                <figure>
-                    <img src="citoyennes2.png" alt="Endossé par Le Collectif" class="partner-image">
+            <h2>Partenaires:</h2>
+            <div class="partner-container">
+                <figure class="partner-item">
+                    <img src="citoyennes2.png" alt="Endossé par Le Collectif">
                     <figcaption>Endossé par Le Collectif</figcaption>
                 </figure>
-
-        <!-- Partner 2 -->
-        <figure style="text-align: center; max-width: 200px;">
-            <img src="VETYE_LOGO2.jpg" alt="Collabore avec Le Collectif" class="partner-image" style="width: 100%; height: auto; border: 1px solid #ccc; border-radius: 10px;">
-            <figcaption>Collabore avec Le Collectif</figcaption>
-            <a href="https://vetye-1803.netlify.app/" target="_blank" rel="noopener noreferrer">vetye-1803.netlify.app</a>
-        </figure>
-
-        <!-- Partner 3 -->
-        <figure style="text-align: center; max-width: 200px;">
-            <img src="jeunesse2.jpg" alt="Supporté par Le Collectif" class="partner-image" style="width: 100%; height: auto; border: 1px solid #ccc; border-radius: 10px;">
-            <figcaption>Supporté par Le Collectif</figcaption>
-            <a href="https://jeunessedebouthaiti.org" target="_blank" rel="noopener noreferrer">jeunessedebouthaiti.org</a>
-        </figure>
+                <figure class="partner-item">
+                    <img src="VETYE_LOGO2.jpg" alt="Collabore avec Le Collectif">
+                    <figcaption>Collabore avec Le Collectif</figcaption>
+                    <a href="https://vetye-1803.netlify.app/" target="_blank" rel="noopener noreferrer">vetye-1803.netlify.app</a>
+                </figure>
+                <figure class="partner-item">
+                    <img src="jeunesse2.jpg" alt="Supporté par Le Collectif">
+                    <figcaption>Supporté par Le Collectif</figcaption>
+                    <a href="https://jeunessedebouthaiti.org" target="_blank" rel="noopener noreferrer">jeunessedebouthaiti.org</a>
+                </figure>
+                
+            </div>
+        </section>
 
  
         <section class="section contact">
@@ -402,3 +405,12 @@
 </body>
 
 </html>
+
+        
+  
+
+
+
+
+
+
